@@ -8,7 +8,7 @@ export default class List extends React.Component{
         let {items,counterReset,incCount,decCount,itemDelete,counterRecycle} = this.props;
         // console.log(items);
         return (
-            <Stack direction="column" alignContent="center">
+            <Stack direction="column" alignContent="center" justifyContent="center">
                 <Stack alignContent="center" justifyContent="center">
                     <Stack direction="row" justifyContent="center" alignContent="center" className=" " spacing={2} sx={ {mb:1}} >
                         <Button className="reset" onClick= {counterReset} disabled={ items.length === 0 ? true : false} variant="contained" ><SettingsBackupRestore/></Button>
