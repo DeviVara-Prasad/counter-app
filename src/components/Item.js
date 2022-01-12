@@ -11,7 +11,7 @@ export default class Item extends React.Component{
         
         return (
             
-            <div>
+            <div >
                 <Stack sx={{m:2}} >
                     <Stack className="" direction="row" spacing={2} justifyContent="center">
                     <Box sx={
