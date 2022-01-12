@@ -19,7 +19,7 @@ export default class Item extends React.Component{
                                    color: "primary.dark",
                                    borderRadius: 25,
                                    border: 2,
-                                   px:2,
+                                   px: this.maker()==='Zero'? 2: 3.5,
                                    my:2,
                                    
                              }

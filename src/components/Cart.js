@@ -16,9 +16,8 @@ function Cart(props){
                         p:5,
                         backgroundColor: 'secondary.dark',
                         justifyContent:'space-between',
-                        fontSize:50,
-                    }
-                }>
+                        fontSize:50
+                    } } >
                 <ShoppingCart sx={{fontSize:50}}/>
                 <span>{props.items}</span>
                 <span> Items</span></Box>
