@@ -48,8 +48,11 @@ class App extends Component{
   };
   render(){
     return (
-    <Stack sx={{border:10,borderColor: 'skyblue', mt:2,mx:10,borderRadius:16,}}>
-    <Cart items = { this.state.counters.filter(item => item.value >0).length }/>
+    <Stack sx={{border:10,borderColor: 'skyblue',borderRadius:16,}}
+    direction = {{ xs: 'column', sm: 'row'}} spacing={{xs:1, sm:2, md:4}}
+    justifyContent="center">
+    <Cart items = { this.state.counters.filter(item => item.value >0).length } 
+    />
     <List
       items = {this.state.counters}
       counterReset = {this.counterReset}
